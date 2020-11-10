@@ -1,0 +1,25 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+    {% include 'partials/sec_navigation.html.twig' %}
+
+    {{ page.content }}
+
+    <div class="gallery" id="lightgallery">
+    {% for image in page.media.images %}
+        <a href="{{ image.url }}" class="image-surround" data-src="{{ image.url }}" data-sub-html="<h4>{{ image.meta.title }}</h4><p>{{ image.meta.description }}</p>">
+            {{ image.cropZoom(300,300).html }}
+        </a>
+    {% endfor %}
+  </div>
+
+    <script>
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+          zoom: true
+        });
+    });
+    </script>
+
+{% endblock %}

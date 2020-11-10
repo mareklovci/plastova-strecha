@@ -1,0 +1,14 @@
+enabled: true
+trackingId: UA-39184546-1
+position: head
+objectName: ga
+forceSsl: false
+async: true
+anonymizeIp: false
+blockedIps:
+  - 212.79.110.143
+cookieConfig: false
+cookieName: _ga
+cookieExpires: 63072000
+debugStatus: false
+debugTrace: false

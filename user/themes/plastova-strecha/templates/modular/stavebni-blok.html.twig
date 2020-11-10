@@ -1,0 +1,14 @@
+{% set image = page.media.images|first %}
+   
+    <div class="card">
+        {{ image.cropZoom(199,199).html }}
+        
+        <div class="card-container">
+            <h4><b>{{ page.title }}</b></h4> 
+            <p>{{ header.custom.color }}</p> 
+            <p>{{ header.custom.popis }}</p>
+            <hr />
+            <p><small>{{ header.custom.price }} Kč bez DPH</small></p>
+            <p><big><b style="color: #C42526;">{{ header.custom.price_dph }}</b> Kč s DPH</big></p>   
+        </div>
+    </div>

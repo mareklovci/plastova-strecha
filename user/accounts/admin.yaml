@@ -1,0 +1,17 @@
+email: mareklovci@gmail.com
+fullname: 'Marek Lovci'
+title: Administrator
+state: enabled
+access:
+  admin:
+    super: 'true'
+    login: 'true'
+  site:
+    login: 'true'
+hashed_password: $2y$10$mmb2vQ4tUWJpnD3V0W9uiOoaLzRyLpVeVO88Ly7FruLumcQYx7XEK
+authorized: true
+twofa_secret: 3O5JD7ZG7HMHYZ5FKMHHCC4FHOUA5ZLL
+language: cs
+twofa_enabled: false
+login_attempts: {  }
+reset: '152c65f459047f8abaf88e50fffd55ed::1594157365'

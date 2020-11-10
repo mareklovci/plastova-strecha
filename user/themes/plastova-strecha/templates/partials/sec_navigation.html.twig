@@ -1,0 +1,19 @@
+{% set current_parent = page.parent %}
+{% set big_image = current_parent.media.images|first.gaussianBlur(3) %}
+    
+<div class="big-display" style="background-image: url('{{ big_image.url }}');">
+    <h2>{{ current_parent.title }}</h2>
+</div>
+
+<div class="submenu">
+    <ul>
+        {% for p in current_parent.children.visible %}
+        {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+            <li class="{{ current_page }}">
+                <a href="{{ p.url }}">
+                    {{ p.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

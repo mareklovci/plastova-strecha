@@ -1,0 +1,17 @@
+title: 'Plastová střecha'
+default_lang: cs
+author:
+  name: 'Josef Šilha'
+  email: mareklovci@gmail.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Vyrábíme a prodáváme plastovou střešní krytinu Tachovskou břidlu. Osobní přístup a rychlé dodání. Napište si o vzorek zdarma.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

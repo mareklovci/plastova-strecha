@@ -1,0 +1,286 @@
+span.horizontal-space{
+    display: inline-block;
+    width: 1em;
+}
+
+a {
+    color: #444;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #C42526;
+}
+
+a.admin-link {
+    color: transparent !important;
+}
+
+a:hover.admin-link {
+    color:#000 !important;
+}
+
+#header.scrolled #navbar a:hover {
+    color: #C42526 !important;
+}
+
+#header.scrolled #navbar a {
+    color: #444 !important;
+}
+
+#header.scrolled #navbar li.active > a {
+    color: #C42526 !important;
+}
+
+#header #navbar ul.navigation li a:before, #header #navbar ul.navigation li a:after {
+    background-color: #C42526 !important;
+}
+
+#header #navbar ul.navigation li a::before, #header #navbar ul.navigation li a::after{
+    background-color: #C42526 !important;
+}
+
+#header.scrolled #navbar a:before, #header.scrolled #navbar a:after {
+    background-color: #C42526 !important;
+}
+
+#header.scrolled #navbar a::before, #header.scrolled #navbar a::after {
+    background-color: #C42526 !important;
+}
+
+li.active > a {
+    color: #C42526;
+}
+
+footer a {
+    color: #999;
+}
+
+.gallery {
+    list-style: none;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row wrap;
+    padding-left: 0px;
+}
+  
+.gallery a {
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+    filter: brightness(75%);
+    transition: all 1s ease;
+}
+
+.gallery a:hover {
+    filter: brightness(100%);
+}
+  
+.gallery a img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 1em auto 2em;
+}
+
+.featured-box > a {
+    display: flex;
+}
+
+.featured-box > a > i {
+    margin: 0 .3em 0 0;
+}
+
+#header #logo h3 {
+    display: block;
+    height: inherit;
+}
+
+#header #logo h3 a {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    display: block;
+    height: 75%;
+    min-width: 200px;
+    margin: 3% 0;
+}
+
+.big-display {
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.big-display h2 {
+    padding: 2em 0;
+    color: #fff;
+    margin: 0px;
+}
+
+.submenu {
+    background: #C42526;
+}
+
+.submenu ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.submenu ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.submenu ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 7px 20px;
+    margin: .5em;
+    border: 1px solid #C42526;
+}
+
+.submenu ul li.active a, .submenu ul li a:hover {
+    background: #C42526;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+.button {
+    background: #fff;
+    color: #C42526;
+    border: 1px solid #C42526;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background: #C42526;
+    color: #fff;
+}
+
+.button:active {
+    box-shadow: 0 1px 0 #D93638;
+}
+
+table, table thead, table thead tr, table thead tr th {
+    border: 0px;
+    background: none;
+}
+
+th, td {
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.napiste-si {
+    background: #C42526;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+    margin-top: .85rem;
+}
+
+a.button-reverse {
+    color: #fff;
+    display: inline-block;
+    padding: 7px 20px;
+    margin: .5em;
+    border: 1px solid #fff;
+}
+
+a.button-reverse:hover{
+    color: #C42526;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+}
+
+.prislusenstvi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card h4 {
+    font-size: 18px;
+    margin-bottom: .4em;
+}
+
+.card p {
+    margin: .2em 0;
+    font-size: 11pt;
+}
+
+.card hr {
+    margin: .5rem 0;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+    padding: 2px 16px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 200px;
+    border:2px solid #C42526;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+i.prodejce::before {
+    content: "P";
+    color: #fff;
+    font-weight: bold;
+    font-style: normal;
+}
+
+i.prodejce {
+    background: #C42526;
+    border-radius: 3px;
+    display: inline-block;
+    padding: .1rem .6rem;
+}
+
+i.firma::before {
+    content: "R";
+    color: #fff;
+    font-weight: bold;
+    font-style: normal;
+}
+
+i.firma {
+    background: #eb741d;
+    border-radius: 3px;
+    display: inline-block;
+    padding: .1rem .6rem;
+}

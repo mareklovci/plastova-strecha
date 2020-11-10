@@ -1,0 +1,15 @@
+enabled: true
+from: noreply@plastovastrecha.cz
+from_name: noreply
+to: info@plastovastrecha.cz
+to_name: 'Stanislav Kliment'
+mailer:
+  engine: smtp
+  smtp:
+    server: localhost
+    port: 25
+    encryption: none
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: false

@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+    {% include 'partials/sec_navigation.html.twig' %}
+
+    {{ page.content }}
+
+    <div class="prislusenstvi">
+    {% for module in page.collection() %}
+        {{ module.content }}
+    {% endfor %}
+    </div>
+
+{% endblock %}

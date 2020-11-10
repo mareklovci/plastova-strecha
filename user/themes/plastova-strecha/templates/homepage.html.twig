@@ -1,0 +1,42 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ page.content }}
+
+    <section class="featured-box">
+        <a href="./kontakt/formular">
+            <i class="fa fa-calculator fa-5x" aria-hidden="true"></i>
+            <b>Vyžádejte si</br>nezávaznou</br>nabídku</b>
+        </a>
+        <a href="./plastove-krytiny/tachovska-bridla/kde-koupit">
+            <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>
+            <b>Najděte</br>nejbližšího</br>prodejce</b>
+        </a>
+        <a href="./kontakt/formular">
+            <i class="fa fa-comment fa-5x" aria-hidden="true"></i>
+            <b>Zeptejte se nás</b>
+        </a>
+    </section>
+
+    <div class="gallery" id="lightgallery">
+    {% for image in page.media.images %}
+        <a href="{{ image.url }}" class="image-surround" data-src="{{ image.url }}" data-sub-html="<h4>{{ image.meta.title }}</h4><p>{{ image.meta.description }}</p>">
+            {{ image.cropZoom(300,300).html }}
+        </a>
+    {% endfor %}
+    </div>
+
+    <div class="napiste-si">
+        <h3>Napište si o vzorek.<br />Je to zdarma</h3>
+        <a class="button-reverse" href="./plastove-krytiny/tachovska-bridla/vzorek-zdarma">Chci vzorek zdarma</a>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery({
+          zoom: true
+        });
+    });
+    </script>
+
+{% endblock %}
